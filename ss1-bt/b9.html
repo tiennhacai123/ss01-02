@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let hobby = [];
+        let users=[
+        { id: 1, name: 'Alice', hobbies: ['Reading', 'Drawing'] }, 
+        { id: 2, name: 'Bob', hobbies: ['Gaming', 'Cooking'] },
+        ]
+        users.filter((item,index,arr)=>{
+            return hobby.push(...item.hobbies);
+        })
+        console.log(hobby);
+    </script>
+</body>
+</html>

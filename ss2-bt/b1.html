@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr1= [1,2,3,4,-5];
+        let arr2 = [1,2,3,4,5];
+        function hasNegativeNumber(arr){
+            let result1 = arr.some((item,index,arr)=>{
+                return item < 0;
+                
+            });
+            console.log(result1);
+            return result1;
+        }
+        hasNegativeNumber(arr1);
+        function hasNegativeNumber(arr){
+            let result2 = arr.some((item,index,arr)=>{
+                return item < 0;
+                
+            });
+            console.log(result2);
+            return result2;
+        }
+        hasNegativeNumber(arr2);
+    </script>
+</body>
+</html>

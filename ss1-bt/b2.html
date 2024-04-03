@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array = [
+    {
+        id: 1,
+        number: 25,
+    },
+    {
+        id: 1,
+        number: 30,
+    },
+    {
+        id: 1,
+        number: 50,
+    },
+];
+
+    let result = array.map((item) => {
+    let numbers;
+    if (item.number < 30) {
+        numbers = item.number + 10;
+    } else if(item.number >30) {
+        numbers = item.number - 10;
+    }else{
+        numbers = item.number;
+    }
+    //Trả về giá trị sau khi đã thay đổi
+    return {
+        id: item.id,
+        number: numbers,
+    };
+    });
+
+    console.log(result);
+    </script>
+</body>
+</html>

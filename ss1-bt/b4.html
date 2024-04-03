@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let idChoice = +prompt("Nhập vào id");
+    let books = [
+    {
+        id: 1,
+        name: 'Lookism',
+    },
+    {
+        id: 2,
+        name: 'How to fight',
+    },
+    {
+        id: 3,
+        name: 'The bad guy',
+    },
+    ];
+
+    let result = books.find((item,index,arr) =>{  
+        return item.id == idChoice;
+        });
+    if (result==undefined) {
+        alert("Không có kết quả tìm kiếm");
+    } else {
+        console.log(result);
+    }
+    </script>
+</body>
+</html>

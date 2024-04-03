@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str1 = "Hello";
+        let str2 = "hello"
+        function hasUppercase1(str){
+            let result1 = Array.from(str).some((item,index,arr)=>{
+                return item >= "A" && item <= "Z"
+            });
+            console.log(result1);
+            return result1;
+        }
+        function hasUppercase2(str){
+            let result2 = Array.from(str).some((item,index,arr)=>{
+                return item >= "A" && item <= "Z"
+            });
+            console.log(result2);
+            return result2;
+        }
+        hasUppercase1(str1);
+        hasUppercase2(str2)
+    </script>
+</body>
+</html>

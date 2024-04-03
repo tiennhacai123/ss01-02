@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [2,4,6,8,10,12];
+        let num = 10;
+        function findMaxNumber(arr,num){
+            let result1 = arr.filter((item,index,arr)=>{
+                return item <= num;
+            });
+            let result2 = Math.max(...result1);
+            return result2;
+        }
+        let maxNum=findMaxNumber(arr,num);
+        console.log(maxNum);
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let users = [
+        {
+            userName:'Tien1',
+            password:'tien1',
+        },
+        {
+            userName:'Tien2',
+            password:'tie n2',
+        },
+        {
+            userName:'Tien3',
+            password:'tien3',
+        },
+    ]
+    let flag = false;    
+    let result = users.findIndex((item,index,arr)=>{
+        return item.password.includes(" ")
+    })
+           console.log("Vi tri chi so tai khoan co chua dau cach la",result);
+
+    // console.log("dict ionary".includes(" "));
+//> true
+
+    </script>
+</body>
+</html>

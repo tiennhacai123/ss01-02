@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr1 = [2,4,6,8,10];
+        let arr2 = [2,4,6,-8,10];
+        function allPositiveNumbers(arr){
+            let result1 = arr.every((item,index,arr)=>{
+            return item > 0    
+            });
+            console.log(result1);
+            return result1;
+        }
+        allPositiveNumbers(arr1);
+
+        function allPositiveNumbers(arr){
+            let result2 = arr.every((item,index,arr)=>{
+            return item > 0    
+            });
+            console.log(result2);
+            return result2;
+        }
+        allPositiveNumbers(arr2);
+    </script>
+</body>
+</html>
